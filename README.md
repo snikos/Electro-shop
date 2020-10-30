@@ -9,5 +9,4 @@ https://snikos.github.io/simple-shop/
 <p>html</p>
 <p>css</p>
 <p>javascript</p>
-<p>jQuery</p>
 <p>json</p>
