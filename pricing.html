@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="css/style.bundle.css" />
+    <!--<link rel="stylesheet" href="product/product.css">-->
+
+    <title>Electro shop</title>
+  </head>
+  <body>
+    <header class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="/index.html" title="Eshop">Eshop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="/index.html" title="Index page">Index</a>
+            <a class="nav-item nav-link" href="/pricing.html" title="Pricing page">Pricing</a>
+            <a class="nav-item nav-link disabled" href="#" tabindex="-1">Login</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Pricing</li>
+        </ol>
+      </nav>
+      <form>
+        <div class="form-row">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <label for="list_complete" class="text-center">Select phone</label>
+            <select id="list_complete" class="form-control"> </select>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <label for="search" class="text-center">Search model</label>
+            <input
+              type="search"
+              id="search"
+              class="form-control"
+              placeholder="Search model..."
+              autocomplete="off"
+              disabled
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
+            <!--legend><small>Filter</small></legend-->
+            <div class="form-group">
+              <label for="results_per_page">Results per page</label>
+              <select id="results_per_page" class="form-control">
+                <option selected>4</option>
+                <option>12</option>
+                <option>30</option>
+                <option>60</option>
+                <option>120</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="order">Sort by</label>
+              <select id="order" class="form-control">
+                <option value="0">Description</option>
+                <option value="1">Price (low to high)</option>
+                <option value="2" selected>Price (high to low)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" id="exact_search" type="checkbox" title="Whole words only" disabled />
+                <label class="form-check-label" for="exact_search">Exact match</label>
+              </div>
+            </div>
+            <div class="form-group" style="position: relative;">
+              <input id="price_min" class="form-control" type="range" min="0" max="2100" value="0" />
+              <input id="price_max" class="form-control" type="range" min="0" max="2100" value="2100" />
+              <label id="range_display" class="form-control">Price</label>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-8 col-lg-10 col-xl-10 text-center">
+            <output id="productsBox">Loading...</output>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="box-alert--fixed">
+      <div class="alert alert-primary">
+        <button type="button" id="remove-alarm--cookie" class="btn btn-outline-light btn-sm"><span>x</span></button>By
+        using our site, you acknowledge that you have read and understand our
+        <a href="https://stackoverflow.com/legal/cookie-policy" class="alert-link" target="_blank">Cookie Policy</a>,
+        <a href="https://stackoverflow.com/legal/privacy-policy" class="alert-link" target="_blank">Privacy Policy</a>,
+        and our
+        <a href="https://stackoverflow.com/legal/terms-of-service/public" class="alert-link" target="_blank"
+          >Terms of Service</a
+        >
+      </div>
+    </div>
+    <footer id="foo-bottom" class="container">
+      <br />
+      <div class="row">
+        <div class="col col-sm-6 col-md-6">
+          <p>Boom</p>
+        </div>
+        <div class="col col-sm-6 col-md-6">
+          <ul class="list-group">
+            <li><a href="/index.html" title="Index page">Index page</a></li>
+            <li><a href="/pricing.html" title="Pricing page">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
+      <br />
+      <br />
+    </footer>
+
+    <script src="common/jquery-2.2.4.min.js"></script>
+    <script src="product/index.bundle.js"></script>
+    <script src="product/pricing.bundle.js"></script>
+  </body>
+</html>

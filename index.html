@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="css/style.bundle.css" />
+    <!--<link rel="stylesheet" href="product/product.css" />-->
+
+    <title>Electro shop</title>
+  </head>
+  <body>
+    <header class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="/index.html" title="Eshop">Eshop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="/index.html" title="Index page">Index</a>
+            <a class="nav-item nav-link" href="/pricing.html" title="Pricing page">Pricing</a>
+            <a class="nav-item nav-link disabled" href="#" tabindex="-1">Login</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Index</li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="container">
+      <h3 class="text-center">Price</h3>
+      <output id="productsBox" class="row text-center">Loading...</output>
+    </div>
+
+    <div class="container">
+      <h3 class="text-center">Hit sell</h3>
+      <output id="productsHit" class="row text-center">Loading...</output>
+    </div>
+
+    <div class="box-alert--fixed">
+      <div class="alert alert-primary">
+        <button type="button" id="remove-alarm--cookie" class="btn btn-outline-light btn-sm"><span>x</span></button>By
+        using our site, you acknowledge that you have read and understand our
+        <a href="https://stackoverflow.com/legal/cookie-policy" class="alert-link" target="_blank">Cookie Policy</a>,
+        <a href="https://stackoverflow.com/legal/privacy-policy" class="alert-link" target="_blank">Privacy Policy</a>,
+        and our
+        <a href="https://stackoverflow.com/legal/terms-of-service/public" class="alert-link" target="_blank"
+          >Terms of Service</a
+        >
+      </div>
+    </div>
+    <footer id="foo-bottom" class="container">
+      <br />
+      <div class="row">
+        <div class="col col-sm-6 col-md-6">
+          <p>Boom</p>
+        </div>
+        <div class="col col-sm-6 col-md-6">
+          <ul class="list-group">
+            <li><a href="/index.html" title="Index page">Index page</a></li>
+            <li><a href="/pricing.html" title="Pricing page">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
+      <br />
+      <br />
+    </footer>
+
+    <script src="common/jquery-2.2.4.min.js"></script>
+    <script src="product/index.bundle.js"></script>
+    <script src="product/indexes.bundle.js"></script>
+  </body>
+</html>
