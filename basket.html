@@ -6,7 +6,7 @@
 
     <link rel="shortcut icon" href="favicon/favicon.ico" />
     <link rel="stylesheet" href="css/style.bundle.css" />
-    <!--<link rel="stylesheet" href="product/product.css" />-->
+    <!--<link rel="stylesheet" href="product/basket.css" />-->
 
     <title>Electro shop</title>
   </head>
@@ -40,7 +40,7 @@
     <div class="container">
       <nav class="row">
         <ol class="col-7 col-sm-9 col-md-10 breadcrumb">
-          <li class="breadcrumb-item active" aria-current="page">Index</li>
+          <li class="breadcrumb-item active" aria-current="page">Basket</li>
         </ol>
         <span class="col-5 col-sm-3 col-md-2 text-center"
           ><a href="comparator.html" id="miniCompare" class="btn btn-light" title="compare">-</a
@@ -50,13 +50,20 @@
     </div>
 
     <div class="container">
-      <h3 class="text-center">Sales</h3>
-      <output id="productsSale" class="row text-center">Loading...</output>
-    </div>
-
-    <div class="container">
-      <h3 class="text-center">Hits</h3>
-      <output id="productsHit" class="row text-center">Loading...</output>
+      <h3 class="row text-center">
+        <span class="col-6">Basket</span>
+        <span class="col-6"
+          ><button type="button" class="btn btn-block btn-sm btn-light basket-clean">Delete all</button></span
+        >
+      </h3>
+      <output id="productsBasket" class="text-center">---</output>
+      <div class="row text-center border">
+        <div class="col-sm-2">Summ:</div>
+        <div class="col-sm-4">-</div>
+        <div class="col-sm-2" id="countic">-</div>
+        <div class="col-sm-2" id="summic">-</div>
+        <div class="col-sm-2">-</div>
+      </div>
     </div>
 
     <div class="box-alert--fixed">
@@ -92,6 +99,6 @@
     </footer>
 
     <script src="product/index.bundle.js"></script>
-    <script src="product/indexes.bundle.js"></script>
+    <script src="product/basket.bundle.js"></script>
   </body>
 </html>

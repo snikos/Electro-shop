@@ -11,9 +11,9 @@
     <title>Electro shop</title>
   </head>
   <body>
-    <header class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="index.html" title="Eshop">Eshop</a>
+    <header class="container bg-primary">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html" title="Electro shop">Electro shop</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -29,6 +29,8 @@
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="index.html" title="Index page">Index</a>
             <a class="nav-item nav-link" href="pricing.html" title="Pricing page">Pricing</a>
+            <a class="nav-item nav-link" href="comparator.html" title="Compare Items">Compare Items</a>
+            <a class="nav-item nav-link" href="basket.html" title="Basket">Basket</a>
             <a class="nav-item nav-link disabled" href="#" tabindex="-1">Login</a>
           </div>
         </div>
@@ -36,10 +38,14 @@
     </header>
 
     <div class="container">
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item active " aria-current="page">Item</li>
+      <nav class="row">
+        <ol class="col-7 col-sm-9 col-md-10 breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Item</li>
         </ol>
+        <span class="col-5 col-sm-3 col-md-2 text-center"
+          ><a href="comparator.html" id="miniCompare" class="btn btn-light" title="compare">-</a
+          ><a href="basket.html" id="miniBasket" class="btn btn-light" title="basket">-</a></span
+        >
       </nav>
     </div>
 
@@ -63,12 +69,15 @@
       <br />
       <div class="row">
         <div class="col col-sm-6 col-md-6">
-          <p>Boom</p>
+          <p>cobrascript</p>
         </div>
         <div class="col col-sm-6 col-md-6">
           <ul class="list-group">
             <li><a href="index.html" title="Index page">Index page</a></li>
             <li><a href="pricing.html" title="Pricing page">Pricing</a></li>
+            <li><a href="comparator.html" title="Pricing page">Compare Items</a></li>
+            <li><a href="basket.html" title="Basket">Basket</a></li>
+            <li><a href="#" tabindex="-1" title="Login" onclick="return false;">Login</a></li>
           </ul>
         </div>
       </div>
