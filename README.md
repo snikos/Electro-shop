@@ -10,3 +10,4 @@ https://snikos.github.io/simple-shop/
 <p>css</p>
 <p>javascript</p>
 <p>json</p>
+<p>shopping</p>
