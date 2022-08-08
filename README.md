@@ -11,4 +11,4 @@ https://snikos.github.io/Electro-shop/
 <p>javascript</p>
 <p>json</p>
 <p>shopping</p>
-<p>order</p>
+<p>webpack</p>
